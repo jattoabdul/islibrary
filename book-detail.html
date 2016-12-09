@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from kodeforest.net/html/books/store/book-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2016 00:03:07 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Book Store - Book Guide Author, Publication and Store</title>
+    <title>IsLibrary - Islamic Books, Authors and Publication</title>
     <!-- CUSTOM STYLE -->
     <link href="style.css" rel="stylesheet">
     <!-- THEME TYPO -->
@@ -39,13 +38,13 @@
     <![endif]-->
 </head>
 <body>
-<div id="loader-wrapper">
+<!--<div id="loader-wrapper">
     <div id="loader"></div>
 
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 
-</div>
+</div>-->
 <!--WRAPPER START-->
 <div class="wrapper">
     <!--HEADER START-->
@@ -54,12 +53,15 @@
             <div class="container">
                 <div class="site-info">
                     <ul>
-                        <li><a href="mailto:Info@bookguide.com"><i class="fa fa-envelope-o"></i>Info@bookguide.com</a>
+                        <li><a href="mailto:info@islibrary.com"><i class="fa fa-envelope-o"></i>Info@islibrary.com</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i></a>
+                        </li>
+                        <!--</button>-->
+                        <li><a id="search-box" href="#"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -67,11 +69,12 @@
         <!--Search Overlay Box Starts -->
         <div id="kode_search_box" class="kode_search_box">
             <form class="kode_search_box-form">
-                <input class="kode_search_box-input" type="search" placeholder="Search..."/>
+                <input class="kode_search_box-input" type="search" placeholder="Search by Keyword..."/>
                 <button class="kode_search_box-submit" type="submit">Search</button>
             </form>
             <span class="kode_search_box-close"></span>
-        </div><!-- /kode_search_box -->
+        </div>
+        <!-- /kode_search_box -->
         <div class="overlay"></div>
         <div class="logo-container">
             <div class="container">
@@ -82,31 +85,11 @@
                 <!--LOGO END-->
                 <div class="kode-navigation">
                     <ul>
-                        <li><a href="index-2.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="blog.html">Our Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-full.html">Blog Full</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="last"><a href="authors.html">Teams</a>
-                            <ul>
-                                <li><a href="authors.html">Author</a></li>
-                                <li><a href="author-detail.html">Author Detail</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="book-listing.html">Products</a>
-                            <ul>
-                                <li><a href="book-listing.html">Products Style 1</a></li>
-                                <li><a href="book-listing-1.html">Products Style 2</a></li>
-                                <li><a href="book-listing-2.html">Products Style 3</a></li>
-                                <li><a href="book-listing-1-w-sidebar.html">Product 2 W/S</a></li>
-                                <li><a href="book-listing-2-w-sidebar.html">Product 3 W/S</a></li>
-                                <li><a href="book-detail.html">Product Detail</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="book-listing.html">Books & Media</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li class="last"><a href="authors.html">Authors</a></li>
+                        <li><a href="book-listing.html">Products</a></li>
                         <li class="last"><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -114,30 +97,10 @@
                     <button class="dl-trigger">Open Menu</button>
                     <ul class="dl-menu">
                         <li><a href="index-2.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="menu-item kode-parent-menu"><a href="blog.html">Our Blog</a>
-                            <ul class="dl-submenu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-full.html">Blog Full</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item kode-parent-menu last"><a href="authors.html">Teams</a>
-                            <ul class="dl-submenu">
-                                <li><a href="authors.html">Author</a></li>
-                                <li><a href="author-detail.html">Author Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item kode-parent-menu last"><a href="book-listing.html">Products</a>
-                            <ul class="dl-submenu">
-                                <li><a href="book-listing.html">Products Style 1</a></li>
-                                <li><a href="book-listing-1.html">Products Style 2</a></li>
-                                <li><a href="book-listing-2.html">Products Style 3</a></li>
-                                <li><a href="book-listing-1-w-sidebar.html">Product 2 W/S</a></li>
-                                <li><a href="book-listing-2-w-sidebar.html">Product 3 W/S</a></li>
-                                <li><a href="book-detail.html">Product Detail</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="book-listing.html">Book & Media</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="book-listing.html">Products</a></li>
                         <li class="last"><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -179,7 +142,7 @@
     <div class="kode-content padding-tb-50">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 sidebar">
+                <div class="col-md-3 sidebar hide-on-med-down">
                     <!--SEARCH WIDGET START-->
                     <div class="widget widget-search">
                         <h2>Search</h2>
@@ -189,74 +152,19 @@
                         </div>
                     </div>
                     <!--SEARCH WIDGET END-->
-                    <!--PRICE FILTER WIDGET START-->
+                    <!--PRICE FILTER WIDGET(YEAR OF PUBLICATION FILTER WIDGET) START-->
                     <div class="widget widget-price-filter">
-                        <h2>Filter by Price</h2>
-                        <b>$ 10</b>
-                        <b class="pull-right">$ 1000</b>
-                        <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
-                               data-slider-step="5" data-slider-value="[10,400]"/>
+                        <h2>Filter by Pub Year</h2>
+                        <b>1970</b>
+                        <b class="pull-right">2017</b>
+                        <input id="ex2" type="text" class="span2" value="" data-slider-min="1970" data-slider-max="2017"
+                               data-slider-step="1" data-slider-value="[1970,1990]"/>
                         <a href="#" class="filter">Filter</a>
                     </div>
-                    <!--PRICE FILTER WIDGET END-->
-                    <!--NEW ARRIVAL WIDGET START-->
+                    <!--PRICE FILTER WIDGET(YEAR OF PUBLICATION FILTER WIDGET) END-->
+                    <!--MOST RECENT(NEW ARRIVAL) WIDGET START-->
                     <div class="widget widget-new-arrival">
-                        <h2>New Arrival</h2>
-                        <ul>
-                            <li>
-                                <div class="new-arrival">
-                                    <div class="kode-thumb">
-                                        <a href="#"><img src="images/new-arrival1.png" alt=""></a>
-                                    </div>
-                                    <div class="kode-text">
-                                        <h3>consetetur sadip scing</h3>
-                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="new-arrival">
-                                    <div class="kode-thumb">
-                                        <a href="#"><img src="images/new-arrival2.png" alt=""></a>
-                                    </div>
-                                    <div class="kode-text">
-                                        <h3>consetetur sadip scing</h3>
-                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="new-arrival">
-                                    <div class="kode-thumb">
-                                        <a href="#"><img src="images/new-arrival3.png" alt=""></a>
-                                    </div>
-                                    <div class="kode-text">
-                                        <h3>consetetur sadip scing</h3>
-                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--NEW ARRIVAL WIDGET END-->
-                    <!--CATEGORY WIDGET START-->
-                    <div class="widget widget-categories">
-                        <h2>Categories</h2>
-                        <ul>
-                            <li><a href="#">Photoshop</a></li>
-                            <li><a href="#">web/Graphic Design</a></li>
-                            <li><a href="#">Mobile Development</a></li>
-                            <li><a href="#">Video Editing</a></li>
-                            <li><a href="#">Photoshop</a></li>
-                            <li><a href="#">web/Graphic Design</a></li>
-                            <li><a href="#">Mobile Development</a></li>
-                            <li><a href="#">Video Editing</a></li>
-                        </ul>
-                    </div>
-                    <!--CATEGORY WIDGET END-->
-                    <!--NEW ARRIVAL WIDGET START-->
-                    <div class="widget widget-new-arrival">
-                        <h2>Best Sellers</h2>
+                        <h2>MOST RECENT</h2>
                         <ul class="bxslider">
                             <li>
                                 <div class="new-arrival">
@@ -318,7 +226,62 @@
                             </li>
                         </ul>
                     </div>
-                    <!--NEW ARRIVAL WIDGET END-->
+                    <!--MOST RECENT(NEW ARRIVAL) WIDGET END-->
+                    <!--CATEGORY WIDGET START-->
+                    <div class="widget widget-categories">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li><a href="#">Photoshop</a></li>
+                            <li><a href="#">web/Graphic Design</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Video Editing</a></li>
+                            <li><a href="#">Photoshop</a></li>
+                            <li><a href="#">web/Graphic Design</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Video Editing</a></li>
+                        </ul>
+                    </div>
+                    <!--CATEGORY WIDGET END-->
+                    <!--MOST DOWNLOADED/MOST RATED(NEW ARRIVAL) WIDGET START-->
+                    <div class="widget widget-new-arrival">
+                        <h2>Most Downloaded</h2>
+                        <ul>
+                            <li>
+                                <div class="new-arrival">
+                                    <div class="kode-thumb">
+                                        <a href="#"><img src="images/new-arrival1.png" alt=""></a>
+                                    </div>
+                                    <div class="kode-text">
+                                        <h3>consetetur sadip scing</h3>
+                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="new-arrival">
+                                    <div class="kode-thumb">
+                                        <a href="#"><img src="images/new-arrival2.png" alt=""></a>
+                                    </div>
+                                    <div class="kode-text">
+                                        <h3>consetetur sadip scing</h3>
+                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="new-arrival">
+                                    <div class="kode-thumb">
+                                        <a href="#"><img src="images/new-arrival3.png" alt=""></a>
+                                    </div>
+                                    <div class="kode-text">
+                                        <h3>consetetur sadip scing</h3>
+                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--MOST DOWNLOADED/MOST RATED(NEW ARRIVAL) WIDGET END-->
                 </div>
                 <div class="col-md-9">
                     <!--BOOK DETAIL START-->

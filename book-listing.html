@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from kodeforest.net/html/books/store/book-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2016 00:02:45 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Book Store - Book Guide Author, Publication and Store</title>
+    <title>IsLibrary - Islamic Books, Authors and Publication</title>
     <!-- CUSTOM STYLE -->
     <link href="style.css" rel="stylesheet">
     <!-- THEME TYPO -->
@@ -39,13 +38,13 @@
     <![endif]-->
 </head>
 <body>
-<div id="loader-wrapper">
+<!--<div id="loader-wrapper">
     <div id="loader"></div>
 
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 
-</div>
+</div>-->
 <!--WRAPPER START-->
 <div class="wrapper">
     <!--HEADER START-->
@@ -54,12 +53,15 @@
             <div class="container">
                 <div class="site-info">
                     <ul>
-                        <li><a href="mailto:Info@bookguide.com"><i class="fa fa-envelope-o"></i>Info@bookguide.com</a>
+                        <li><a href="mailto:info@islibrary.com"><i class="fa fa-envelope-o"></i>Info@islibrary.com</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i></a>
+                        </li>
+                        <!--</button>-->
+                        <li><a id="search-box" href="#"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -67,11 +69,12 @@
         <!--Search Overlay Box Starts -->
         <div id="kode_search_box" class="kode_search_box">
             <form class="kode_search_box-form">
-                <input class="kode_search_box-input" type="search" placeholder="Search..."/>
+                <input class="kode_search_box-input" type="search" placeholder="Search by Keyword..."/>
                 <button class="kode_search_box-submit" type="submit">Search</button>
             </form>
             <span class="kode_search_box-close"></span>
-        </div><!-- /kode_search_box -->
+        </div>
+        <!-- /kode_search_box -->
         <div class="overlay"></div>
         <div class="logo-container">
             <div class="container">
@@ -82,31 +85,11 @@
                 <!--LOGO END-->
                 <div class="kode-navigation">
                     <ul>
-                        <li><a href="index-2.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="blog.html">Our Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-full.html">Blog Full</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="last"><a href="authors.html">Teams</a>
-                            <ul>
-                                <li><a href="authors.html">Author</a></li>
-                                <li><a href="author-detail.html">Author Detail</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="book-listing.html">Products</a>
-                            <ul>
-                                <li><a href="book-listing.html">Products Style 1</a></li>
-                                <li><a href="book-listing-1.html">Products Style 2</a></li>
-                                <li><a href="book-listing-2.html">Products Style 3</a></li>
-                                <li><a href="book-listing-1-w-sidebar.html">Product 2 W/S</a></li>
-                                <li><a href="book-listing-2-w-sidebar.html">Product 3 W/S</a></li>
-                                <li><a href="book-detail.html">Product Detail</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="book-listing.html">Books & Media</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li class="last"><a href="authors.html">Authors</a></li>
+                        <li><a href="book-listing.html">Products</a></li>
                         <li class="last"><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -114,30 +97,10 @@
                     <button class="dl-trigger">Open Menu</button>
                     <ul class="dl-menu">
                         <li><a href="index-2.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="menu-item kode-parent-menu"><a href="blog.html">Our Blog</a>
-                            <ul class="dl-submenu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-full.html">Blog Full</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item kode-parent-menu last"><a href="authors.html">Teams</a>
-                            <ul class="dl-submenu">
-                                <li><a href="authors.html">Author</a></li>
-                                <li><a href="author-detail.html">Author Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item kode-parent-menu last"><a href="book-listing.html">Products</a>
-                            <ul class="dl-submenu">
-                                <li><a href="book-listing.html">Products Style 1</a></li>
-                                <li><a href="book-listing-1.html">Products Style 2</a></li>
-                                <li><a href="book-listing-2.html">Products Style 3</a></li>
-                                <li><a href="book-listing-1-w-sidebar.html">Product 2 W/S</a></li>
-                                <li><a href="book-listing-2-w-sidebar.html">Product 3 W/S</a></li>
-                                <li><a href="book-detail.html">Product Detail</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="book-listing.html">Book & Media</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="book-listing.html">Products</a></li>
                         <li class="last"><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -148,11 +111,11 @@
     <!--BANNER START-->
     <div class="kode-inner-banner">
         <div class="kode-page-heading">
-            <h2>Books Listing</h2>
+            <h2>Books and Media</h2>
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Books Guide</a></li>
-                <li class="active">Books Listing</li>
+                <li><a href="book-listing.html">Books and Media</a></li>
+                <li class="active">Books and Media</li>
             </ol>
         </div>
         <div class="container">
@@ -165,7 +128,11 @@
                         <input type="text" placeholder="Enter Your Title">
                     </div>
                     <div class="col-md-2">
-                        <select></select>
+                        <select>
+                            <option value="all">All Categories</option>
+                            <option value="fiqh">Fiqh</option>
+                            <option value="seerah">Seerah</option>
+                        </select>
                     </div>
                     <div class="col-md-2">
                         <button>Search</button>
@@ -176,8 +143,6 @@
     </div>
     <!--BANNER END-->
     <!--CONTENT START-->
-
-
     <div class="kode-content padding-tb-50">
         <div class="container">
             <div class="row">
@@ -192,74 +157,19 @@
                         </div>
                     </div>
                     <!--SEARCH WIDGET END-->
-                    <!--PRICE FILTER WIDGET START-->
+                    <!--PRICE FILTER WIDGET(YEAR OF PUBLICATION FILTER WIDGET) START-->
                     <div class="widget widget-price-filter">
-                        <h2>Filter by Price</h2>
-                        <b>$ 10</b>
-                        <b class="pull-right">$ 1000</b>
-                        <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
-                               data-slider-step="5" data-slider-value="[10,400]"/>
+                        <h2>Filter by Pub Year</h2>
+                        <b>1970</b>
+                        <b class="pull-right">2017</b>
+                        <input id="ex2" type="text" class="span2" value="" data-slider-min="1970" data-slider-max="2017"
+                               data-slider-step="1" data-slider-value="[1970,1990]"/>
                         <a href="#" class="filter">Filter</a>
                     </div>
-                    <!--PRICE FILTER WIDGET END-->
-                    <!--NEW ARRIVAL WIDGET START-->
+                    <!--PRICE FILTER WIDGET(YEAR OF PUBLICATION FILTER WIDGET) END-->
+                    <!--MOST RECENT(NEW ARRIVAL) WIDGET START-->
                     <div class="widget widget-new-arrival">
-                        <h2>New Arrival</h2>
-                        <ul>
-                            <li>
-                                <div class="new-arrival">
-                                    <div class="kode-thumb">
-                                        <a href="#"><img src="images/new-arrival1.png" alt=""></a>
-                                    </div>
-                                    <div class="kode-text">
-                                        <h3>consetetur sadip scing</h3>
-                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="new-arrival">
-                                    <div class="kode-thumb">
-                                        <a href="#"><img src="images/new-arrival2.png" alt=""></a>
-                                    </div>
-                                    <div class="kode-text">
-                                        <h3>consetetur sadip scing</h3>
-                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="new-arrival">
-                                    <div class="kode-thumb">
-                                        <a href="#"><img src="images/new-arrival3.png" alt=""></a>
-                                    </div>
-                                    <div class="kode-text">
-                                        <h3>consetetur sadip scing</h3>
-                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--NEW ARRIVAL WIDGET END-->
-                    <!--CATEGORY WIDGET START-->
-                    <div class="widget widget-categories">
-                        <h2>Categories</h2>
-                        <ul>
-                            <li><a href="#">Photoshop</a></li>
-                            <li><a href="#">web/Graphic Design</a></li>
-                            <li><a href="#">Mobile Development</a></li>
-                            <li><a href="#">Video Editing</a></li>
-                            <li><a href="#">Photoshop</a></li>
-                            <li><a href="#">web/Graphic Design</a></li>
-                            <li><a href="#">Mobile Development</a></li>
-                            <li><a href="#">Video Editing</a></li>
-                        </ul>
-                    </div>
-                    <!--CATEGORY WIDGET END-->
-                    <!--NEW ARRIVAL WIDGET START-->
-                    <div class="widget widget-new-arrival">
-                        <h2>Best Sellers</h2>
+                        <h2>MOST RECENT</h2>
                         <ul class="bxslider">
                             <li>
                                 <div class="new-arrival">
@@ -321,238 +231,327 @@
                             </li>
                         </ul>
                     </div>
-                    <!--NEW ARRIVAL WIDGET END-->
+                    <!--MOST RECENT(NEW ARRIVAL) WIDGET END-->
+                    <!--CATEGORY WIDGET START-->
+                    <div class="widget widget-categories">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li><a href="#">Photoshop</a></li>
+                            <li><a href="#">web/Graphic Design</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Video Editing</a></li>
+                            <li><a href="#">Photoshop</a></li>
+                            <li><a href="#">web/Graphic Design</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Video Editing</a></li>
+                        </ul>
+                    </div>
+                    <!--CATEGORY WIDGET END-->
+                    <!--MOST DOWNLOADED/MOST RATED(NEW ARRIVAL) WIDGET START-->
+                    <div class="widget widget-new-arrival">
+                        <h2>Most Downloaded</h2>
+                        <ul>
+                            <li>
+                                <div class="new-arrival">
+                                    <div class="kode-thumb">
+                                        <a href="#"><img src="images/new-arrival1.png" alt=""></a>
+                                    </div>
+                                    <div class="kode-text">
+                                        <h3>consetetur sadip scing</h3>
+                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="new-arrival">
+                                    <div class="kode-thumb">
+                                        <a href="#"><img src="images/new-arrival2.png" alt=""></a>
+                                    </div>
+                                    <div class="kode-text">
+                                        <h3>consetetur sadip scing</h3>
+                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="new-arrival">
+                                    <div class="kode-thumb">
+                                        <a href="#"><img src="images/new-arrival3.png" alt=""></a>
+                                    </div>
+                                    <div class="kode-text">
+                                        <h3>consetetur sadip scing</h3>
+                                        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--MOST DOWNLOADED/MOST RATED(NEW ARRIVAL) WIDGET END-->
                 </div>
                 <!--SIDEBAR END-->
+                <!--MAIN CONTENT START-->
                 <div class="col-md-9">
                     <div class="row">
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list1.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img src="images/book5.png" alt="">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>
-                                            Well, reading books as a hobby was always a noble, pleasant and very u
-                                        </p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3>PENDRAGON</h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>PENDRAGON Dr.Machale</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Dr.Machale</p>
+                                    <p class="kode-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        Lorem ipsum dolor sit amet, consectetur adi 120word
+                                    </p>
+                                    <a href="book-detail.html" class="add-to-cart">View Details</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list2.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img src="images/book6.png" alt="">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">Bridget Jones</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>Mad About the Boy</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Helen Fielding</p>
+                                    <p class="kode-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        Lorem ipsum dolor sit amet, consectetur adi 120word
+                                    </p>
+                                    <a href="#" class="add-to-cart">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list3.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img src="images/book7.png" alt="">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">Burnt Siena</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>Art History Mystery</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Sara Wisseman</p>
+                                    <p class="kode-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        Lorem ipsum dolor sit amet, consectetur adi 120word
+                                    </p>
+                                    <a href="#" class="add-to-cart">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list4.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img src="images/book8.png" alt="">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">Chrysalis</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>The Brave Girl</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>William S.</p>
+                                    <p class="kode-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        Lorem ipsum dolor sit amet, consectetur adi 120word
+                                    </p>
+                                    <a href="#" class="add-to-cart">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list5.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book10.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">The Winning</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>The Winning Story</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Mind Set</p>
+                                    <p class="price">$447.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list6.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book2.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">Dead Water</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>Dead Water in the Sea</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Ann Grannger</p>
+                                    <p class="price">$777.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list7.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book3.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">The Fault In our Stars</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>Paper Towns</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Daniel Abraham</p>
+                                    <p class="price">$770.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list9.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book4.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">The Ruby Of Egypt</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>The Ruby Of Egypt</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Cat Howard</p>
+                                    <p class="price">$996.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list3.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book5.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">Fableheaven</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>Fableheaven The Master</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Brandon Hall</p>
+                                    <p class="price">$542.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list4.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book6.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">Star Trek</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>Star Trek Course</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>DisAvowed</p>
+                                    <p class="price">$821.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list6.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book7.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">City Of Bones</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>City Of Bones Lies here</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Cassandra Clare</p>
+                                    <p class="price">$362.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
                         <!--PRODUCT GRID END-->
                         <!--PRODUCT GRID START-->
                         <div class="col-md-4 col-sm-6">
-                            <div class="books-listing-3">
-                                <div class="kode-thumb">
-                                    <a href="#"><img src="images/books-list7.jpg" alt=""></a>
-                                </div>
+                            <div class="best-seller-pro">
+                                <figure>
+                                    <img alt="" src="images/book8.png">
+                                </figure>
                                 <div class="kode-text">
-                                    <p class="price">$80.75<span>90.75$</span></p>
-                                    <h3>Stephen King</h3>
-                                    <div class="kode-caption">
-                                        <p>Well, reading books as a hobby was always a noble, pleasant and very u</p>
-                                        <a href="#"><i class="fa fa-heart"></i></a>
-                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                        <a href="#"><i class="fa fa-link"></i></a>
+                                    <h3><a href="#">Annette Blair</a></h3>
+                                </div>
+                                <div class="kode-caption">
+                                    <h3>Annette Blair The Maker</h3>
+                                    <div class="rating">
+                                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                                     </div>
+                                    <p>Vampire Dragon</p>
+                                    <p class="price">$599.75</p>
+                                    <a class="add-to-cart" href="#">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -580,29 +579,45 @@
                     </nav>
                     <!--PAGINATION END-->
                 </div>
+                <!--MAIN CONTENT END-->
             </div>
         </div>
     </div>
-
     <!--CONTENT END-->
-    <!--NEWSLETTER START-->
-    <section class="kode-newsletters">
+
+    <!--COUNT UP SECTION START-->
+    <div class="count-up-section">
         <div class="container">
-            <!--SECTION CONTENT START-->
-            <div class="section-content white">
-                <h2>Subscribe to our Newsletter for the latest news.</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam.ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-            </div>
-            <!--SECTION CONTENT END-->
-            <div class="input-container">
-                <input type="text" placeholder="Subscribe us">
-                <button>Subcribe</button>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="count-up">
+                        <span class="counter circle">3578</span>
+                        <p>Books To Read</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="count-up">
+                        <span class="counter circle">589</span>
+                        <p>Online Users</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="count-up">
+                        <span class="counter circle">1250</span>
+                        <p>Best Authors</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="count-up">
+                        <span class="counter circle">57</span>
+                        <p>Awards</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!--NEWSLETTER END-->
+    </div>
+    <!--COUNT UP SECTION END-->
+
     <footer>
         <div class="container">
             <div class="row">
@@ -671,12 +686,35 @@
     </footer>
     <div class="copyrights">
         <div class="container">
-            <p>Copyrights © 2015-16 KodeForest. All rights reserved</p>
+            <p>Copyrights © 2015-16 Irshaadtech. All rights reserved</p>
             <div class="cards"><img src="images/cards.png" alt=""></div>
         </div>
     </div>
+
 </div>
 <!--WRAPPER END-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login</h4>
+            </div>
+            <div class="modal-body">
+                Login form
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL END-->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

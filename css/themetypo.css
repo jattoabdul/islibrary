@@ -20,7 +20,7 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
+    /*hgroup,*/
 nav,
 section {
     display: block;
@@ -659,9 +659,7 @@ blockquote a{
 	color:#666;
 }
 /* BlockQoutes*/
-*
 
-/
 .wp-caption img[class*="wp-image-"] {
     display: block;
     margin: 0;
