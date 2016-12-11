@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from kodeforest.net/html/books/store/authors.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2016 00:04:46 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Book Store - Book Guide Author, Publication and Store</title>
+    <title>IsLibrary -Authors of our Books</title>
     <!-- CUSTOM STYLE -->
     <link href="style.css" rel="stylesheet">
     <!-- THEME TYPO -->
@@ -39,13 +38,13 @@
     <![endif]-->
 </head>
 <body>
-<div id="loader-wrapper">
+<!--<div id="loader-wrapper">
     <div id="loader"></div>
 
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 
-</div>
+</div>-->
 <!--WRAPPER START-->
 <div class="wrapper">
     <!--HEADER START-->
@@ -54,12 +53,15 @@
             <div class="container">
                 <div class="site-info">
                     <ul>
-                        <li><a href="mailto:Info@bookguide.com"><i class="fa fa-envelope-o"></i>Info@bookguide.com</a>
+                        <li><a href="mailto:info@islibrary.com"><i class="fa fa-envelope-o"></i>Info@islibrary.com</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i></a>
+                        </li>
+                        <!--</button>-->
+                        <li><a id="search-box" href="#"><i class="fa fa-search"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -82,31 +84,11 @@
                 <!--LOGO END-->
                 <div class="kode-navigation">
                     <ul>
-                        <li><a href="index-2.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="blog.html">Our Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-full.html">Blog Full</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="last"><a href="authors.html">Teams</a>
-                            <ul>
-                                <li><a href="authors.html">Author</a></li>
-                                <li><a href="author-detail.html">Author Detail</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="book-listing.html">Products</a>
-                            <ul>
-                                <li><a href="book-listing.html">Products Style 1</a></li>
-                                <li><a href="book-listing-1.html">Products Style 2</a></li>
-                                <li><a href="book-listing-2.html">Products Style 3</a></li>
-                                <li><a href="book-listing-1-w-sidebar.html">Product 2 W/S</a></li>
-                                <li><a href="book-listing-2-w-sidebar.html">Product 3 W/S</a></li>
-                                <li><a href="book-detail.html">Product Detail</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="book-listing.html">Books & Media</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li class="last"><a href="authors.html">Authors</a></li>
+                        <li><a href="book-listing.html">Products</a></li>
                         <li class="last"><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -114,30 +96,10 @@
                     <button class="dl-trigger">Open Menu</button>
                     <ul class="dl-menu">
                         <li><a href="index-2.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="menu-item kode-parent-menu"><a href="blog.html">Our Blog</a>
-                            <ul class="dl-submenu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-full.html">Blog Full</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item kode-parent-menu last"><a href="authors.html">Teams</a>
-                            <ul class="dl-submenu">
-                                <li><a href="authors.html">Author</a></li>
-                                <li><a href="author-detail.html">Author Detail</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item kode-parent-menu last"><a href="book-listing.html">Products</a>
-                            <ul class="dl-submenu">
-                                <li><a href="book-listing.html">Products Style 1</a></li>
-                                <li><a href="book-listing-1.html">Products Style 2</a></li>
-                                <li><a href="book-listing-2.html">Products Style 3</a></li>
-                                <li><a href="book-listing-1-w-sidebar.html">Product 2 W/S</a></li>
-                                <li><a href="book-listing-2-w-sidebar.html">Product 3 W/S</a></li>
-                                <li><a href="book-detail.html">Product Detail</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="book-listing.html">Book & Media</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="book-listing.html">Products</a></li>
                         <li class="last"><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -165,7 +127,11 @@
                         <input type="text" placeholder="Enter Your Title">
                     </div>
                     <div class="col-md-2">
-                        <select></select>
+                        <select>
+                            <option value="all">All Categories</option>
+                            <option value="fiqh">Fiqh</option>
+                            <option value="seerah">Seerah</option>
+                        </select>
                     </div>
                     <div class="col-md-2">
                         <button>Search</button>
@@ -183,7 +149,7 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author4.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author4.png" alt=""></a>
                         <div class="kode-caption">
                             <h4>Chinua Achebe</h4>
                             <p>Authors</p>
@@ -202,9 +168,9 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author5.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author5.png" alt=""></a>
                         <div class="kode-caption">
-                            <h4>Julian Baggini</h4>
+                            <h4>Alege Ali</h4>
                             <p>Authors</p>
                             <div class="social-icon">
                                 <ul>
@@ -221,7 +187,7 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author6.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author6.png" alt=""></a>
                         <div class="kode-caption">
                             <h4>Quentin Blake</h4>
                             <p>Authors</p>
@@ -240,9 +206,9 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author7.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author4.png" alt=""></a>
                         <div class="kode-caption">
-                            <h4>Saul Bellow</h4>
+                            <h4>Chinua Achebe</h4>
                             <p>Authors</p>
                             <div class="social-icon">
                                 <ul>
@@ -259,9 +225,9 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author8.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author5.png" alt=""></a>
                         <div class="kode-caption">
-                            <h4>Mary Beard</h4>
+                            <h4>Alege Ali</h4>
                             <p>Authors</p>
                             <div class="social-icon">
                                 <ul>
@@ -278,9 +244,9 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author9.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author6.png" alt=""></a>
                         <div class="kode-caption">
-                            <h4>Nina Bawden</h4>
+                            <h4>Quentin Blake</h4>
                             <p>Authors</p>
                             <div class="social-icon">
                                 <ul>
@@ -297,9 +263,9 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author10.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author4.png" alt=""></a>
                         <div class="kode-caption">
-                            <h4>Belinda Bauer</h4>
+                            <h4>Chinua Achebe</h4>
                             <p>Authors</p>
                             <div class="social-icon">
                                 <ul>
@@ -316,9 +282,9 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author11.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author5.png" alt=""></a>
                         <div class="kode-caption">
-                            <h4>Sebastian Barry</h4>
+                            <h4>Alege Ali</h4>
                             <p>Authors</p>
                             <div class="social-icon">
                                 <ul>
@@ -335,9 +301,9 @@
                 <!--AUTHOR LIST START-->
                 <div class="col-md-4 col-sm-6">
                     <div class="kode-author">
-                        <a href="#"><img src="images/author12.png" alt=""></a>
+                        <a href="author-detail.html"><img src="images/author6.png" alt=""></a>
                         <div class="kode-caption">
-                            <h4>James Baldwin</h4>
+                            <h4>Quentin Blake</h4>
                             <p>Authors</p>
                             <div class="social-icon">
                                 <ul>
@@ -435,7 +401,7 @@
                 <!--CATEGORY WIDGET START-->
                 <div class="col-md-3">
                     <div class="widget widget-categories">
-                        <h2>Latest Tweets</h2>
+                        <h2>Information</h2>
                         <ul>
                             <li><a href="#">Specials</a></li>
                             <li><a href="#">New products</a></li>
@@ -463,12 +429,35 @@
     </footer>
     <div class="copyrights">
         <div class="container">
-            <p>Copyrights © 2015-16 KodeForest. All rights reserved</p>
+            <p>Copyrights © 2015-16 Irshaadtech. All Rights Reserved</p>
+            <!--countries flags (depicting different languages)-->
             <div class="cards"><img src="images/cards.png" alt=""></div>
         </div>
     </div>
 </div>
 <!--WRAPPER END-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login</h4>
+            </div>
+            <div class="modal-body">
+                Login form
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL END-->
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -482,6 +471,4 @@
 <script src="js/classie.js"></script>
 <script src="js/functions.js"></script>
 </body>
-
-<!-- Mirrored from kodeforest.net/html/books/store/authors.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2016 00:06:20 GMT -->
 </html>
