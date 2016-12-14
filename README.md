@@ -1,7 +1,9 @@
 # islibrary
 An E-library application
 
-Overnote of the online Islamic Library proposed @ www.sibghotallah.com 
+Overnote of the online Islamic Library proposed @ www.sibghotallah.com
+
+github url=> https://jattoabdul.github.io/islibrary/
 
 Problem to be solved with the project: Illiteracy among Muslims of this age!
 
